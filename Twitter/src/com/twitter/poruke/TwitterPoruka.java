@@ -40,7 +40,7 @@ public class TwitterPoruka {
 	 *             - kada se kao parametar prosledi null ili prazan string.
 	 */
 	public void setKorisnik(String korisnik) {
-		if (korisnik == null || korisnik == "")
+		if (korisnik == null || korisnik.isEmpty())
 			throw new RuntimeException("Ime korisnika mora biti uneto");
 		this.korisnik = korisnik;
 	}
@@ -51,7 +51,7 @@ public class TwitterPoruka {
 	 * @return String - poruka
 	 */
 	public String getPoruka() {
-		return "poruka";
+		return poruka;
 	}
 
 	/**
